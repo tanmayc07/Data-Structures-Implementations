@@ -1,3 +1,7 @@
+/*
+* Author - @tanmayc07
+* Implementation of DoublyLinkedList
+*/
 package LinkedLists;
 
 class Node {
