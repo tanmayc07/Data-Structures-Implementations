@@ -6,7 +6,12 @@ class Node {
 }
 
 class SLL {
-    Node head=null;
+    private Node head=null;
+    private int size=0;
+
+    int size() {
+        return this.size;
+    }
 
     void insertAtEnd(int val) {
         Node newnode = new Node();
@@ -17,9 +22,21 @@ class SLL {
             Node start = head;
             while(start.next!=null)
                 start=start.next;
-
             start.next = newnode;
         }
+        size++;
+    }
+
+    void insertAtStart(int val) {
+        Node newnode = new Node();
+        newnode.data=val;
+        if(head==null) {
+            head=newnode;
+        } else {
+            newnode.next=head;
+            head=newnode;
+        }
+        size++;
     }
 
     void removeFromEnd() {
@@ -33,6 +50,17 @@ class SLL {
                 start=start.next;
             }
             prev.next=null;
+            size--;
+        }
+    }
+
+    void removeFromStart() {
+        if(head==null) {
+            System.out.println("List is Empty! Cannot remove!");
+        } else {
+            Node start = head;
+            head = start.next;
+            size--;
         }
     }
 
@@ -51,9 +79,12 @@ public class SinglyLinkedList {
         SLL l1 = new SLL();
         l1.insertAtEnd(10);
         l1.insertAtEnd(20);
-        l1.insertAtEnd(30);
+        l1.insertAtStart(30);
+        l1.insertAtStart(50);
         l1.display();
         l1.removeFromEnd();
+        l1.removeFromStart();
         l1.display();
+        System.out.println(l1.size());
     }
 }
