@@ -1,3 +1,7 @@
+/*
+ * Author - @tanmayc07
+ * Implementation of SinglyLinkedList
+ */
 package LinkedLists;
 
 class Node {

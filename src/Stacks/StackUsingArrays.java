@@ -1,3 +1,7 @@
+/*
+ * Author - @tanmayc07
+ * Implementation of Stack using Arrays
+ */
 package Stacks;
 import java.util.*;
 
