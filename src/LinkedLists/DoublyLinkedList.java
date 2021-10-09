@@ -15,6 +15,10 @@ class DLL {
     private Node tail = null;
     private int size;
 
+    int size() {
+        return this.size;
+    }
+
     void insertAtEnd(int val) {
         Node newnode = new Node();
         newnode.data = val;
@@ -29,22 +33,45 @@ class DLL {
         size++;
     }
 
-    void display() {
-        Node start = head;
-        while(start!=null) {
-            System.out.print(start.data + "->");
-            start=start.next;
+    void removeFromEnd() {
+        if(head==null) {
+            System.out.println("Cannot Remove! List is Empty!");
+        } else {
+            if(head.next==null) {
+                head=null;
+            } else {
+                Node temp;
+                temp = tail.prev;
+                tail.prev.next = null;
+                tail = temp;
+            }
         }
-        System.out.println();
+    }
+
+    void display() {
+        if(head==null) {
+            System.out.println("Cannot Print! List is Empty!");
+        } else {
+            Node start = head;
+            while(start!=null) {
+                System.out.print(start.data + "->");
+                start=start.next;
+            }
+            System.out.println();
+        }
     }
 
     void reverseDisplay() {
-        Node start = tail;
-        while(start!=null) {
-            System.out.print(start.data + "->");
-            start=start.prev;
+        if(head==null) {
+            System.out.println("Cannot Print! List is Empty!");
+        } else {
+            Node start = tail;
+            while(start!=null) {
+                System.out.print(start.data + "->");
+                start=start.prev;
+            }
+            System.out.println();
         }
-        System.out.println();
     }
 }
 
@@ -56,5 +83,8 @@ public class DoublyLinkedList {
         l1.insertAtEnd(30);
         l1.display();
         l1.reverseDisplay();
+        l1.removeFromEnd();
+        l1.removeFromEnd();
+        l1.display();
     }
 }
