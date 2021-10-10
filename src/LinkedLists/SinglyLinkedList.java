@@ -4,11 +4,6 @@
  */
 package LinkedLists;
 
-class Node {
-    int data;
-    Node next;
-}
-
 class SLL {
     private Node head=null;
     private int size=0;

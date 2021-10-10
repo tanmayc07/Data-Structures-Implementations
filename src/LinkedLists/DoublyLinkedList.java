@@ -4,15 +4,15 @@
 */
 package LinkedLists;
 
-class Node {
+class DNode {
     int data;
-    Node next;
-    Node prev;
+    DNode next;
+    DNode prev;
 }
 
 class DLL {
-    private Node head = null;
-    private Node tail = null;
+    private DNode head = null;
+    private DNode tail = null;
     private int size;
 
     int size() {
@@ -20,7 +20,7 @@ class DLL {
     }
 
     void insertAtEnd(int val) {
-        Node newnode = new Node();
+        DNode newnode = new DNode();
         newnode.data = val;
         if(head==null) {
             head = tail = newnode;
@@ -40,7 +40,7 @@ class DLL {
             if(head.next==null) {
                 head=null;
             } else {
-                Node temp;
+                DNode temp;
                 temp = tail.prev;
                 tail.prev.next = null;
                 tail = temp;
@@ -52,7 +52,7 @@ class DLL {
         if(head==null) {
             System.out.println("Cannot Print! List is Empty!");
         } else {
-            Node start = head;
+            DNode start = head;
             while(start!=null) {
                 System.out.print(start.data + "->");
                 start=start.next;
@@ -65,7 +65,7 @@ class DLL {
         if(head==null) {
             System.out.println("Cannot Print! List is Empty!");
         } else {
-            Node start = tail;
+            DNode start = tail;
             while(start!=null) {
                 System.out.print(start.data + "->");
                 start=start.prev;
