@@ -5,7 +5,13 @@
  */
 package LinkedLists;
 
-public class Node {
+class Node {
         int data;
-        LinkedLists.Node next;
+        Node next;
+}
+
+class DNode {
+        int data;
+        DNode next;
+        DNode prev;
 }

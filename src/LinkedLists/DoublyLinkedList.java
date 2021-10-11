@@ -4,12 +4,6 @@
 */
 package LinkedLists;
 
-class DNode {
-    int data;
-    DNode next;
-    DNode prev;
-}
-
 class DLL {
     private DNode head = null;
     private DNode tail = null;
