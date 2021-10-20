@@ -1,15 +1,16 @@
 /*
  * Author - @tanmayc07
- * Since Jetbrains IntelliJ was not letting me have multiple node class
- * in different files due to my project structure, I added it to a seperate file ~*_*~
+ * Node Classes for LinkedLists
  */
 package LinkedLists;
 
+// Single pointer node class
 class Node {
         int data;
         Node next;
 }
 
+// Dual pointer node class
 class DNode {
         int data;
         DNode next;
