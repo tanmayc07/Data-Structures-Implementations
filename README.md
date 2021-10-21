@@ -5,7 +5,7 @@ Current Implementations:
 
 |Name|Source|
 |----|------|
-|Stacks|https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/Stacks|
-|LinkedLists|https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/LinkedLists|
-|Queues|https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/Queues|
-|Miscellaneous|https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/Miscellaneous|
+|Stacks|[Implementation](https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/Stacks) [Theory](https://www.geeksforgeeks.org/stack-data-structure/?ref=ghm)|
+|LinkedLists|[Implementation](https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/LinkedLists) [Theory](https://www.geeksforgeeks.org/data-structures/linked-list/)|
+|Queues|[Implementation](https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/Queues) [Theory](https://www.geeksforgeeks.org/queue-data-structure/)|
+|Miscellaneous|[Implementation](https://github.com/tanmayc07/Data-Structures-Implementations/tree/master/src/Miscellaneous)|
